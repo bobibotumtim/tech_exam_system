@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Exam - Tech Skill Exams</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1 id="examTitle">Java Basic Exam - Review</h1>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="review-header">
+      <div class="score-summary">
+        <div class="score-item">
+          <span class="score-label">Your Score:</span>
+          <span class="score-value" id="reviewScore">7 / 10</span>
+        </div>
+        <div class="score-item">
+          <span class="score-label">Percentage:</span>
+          <span class="percentage-value" id="reviewPercentage">70%</span>
+        </div>
+      </div>
+      <button class="btn btn-secondary" onclick="backToResult()">Back to Result</button>
+    </div>
+
+    <div class="review-questions" id="reviewQuestions">
+      <!-- Questions will be loaded here -->
+    </div>
+
+    <div class="review-footer">
+      <button class="btn btn-primary" onclick="retakeExam()">Retake Exam</button>
+      <button class="btn btn-secondary" onclick="backToHome()">Back to Home</button>
+    </div>
+  </div>
+
+  <script src="review.js"></script>
+</body>
+</html>
